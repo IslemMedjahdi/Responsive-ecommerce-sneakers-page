@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fall Limited Edition Sneakers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="h-screen font-Kumbh">
+  <header>
+    <div class="lg:px-32 sm:px-12 px-8 md:py-0 py-5">
+      <nav class="flex justify-between items-center relative">
+        <div class="flex items-center">
+          <div class="flex items-center space-x-4">
+            <img src="images/icon-menu.svg" alt="menu" class="md:hidden sm:block cursor-pointer" id="menu-ico">
+            <a href="#"><img src="images/logo.svg" alt="logo" class="mr-8 lg:mr-12"></a>
+          </div>
+          <ul class="space-x-6 text-gray-600 font-normal  items-center  hidden md:flex">
+            <li
+              class="hover:text-gray-800 border-b-4 border-transparent hover:border-yellow-500 transition duration-300">
+              <a href="#" class="block py-6">Collections</a>
+            </li>
+            <li
+              class="hover:text-gray-800 border-b-4 border-transparent hover:border-yellow-500 transition duration-300">
+              <a href="#" class="block py-6">Men</a>
+            </li>
+            <li
+              class="hover:text-gray-800 border-b-4 border-transparent hover:border-yellow-500 transition duration-300">
+              <a href="#" class="block py-6">Women</a>
+            </li>
+            <li
+              class="hover:text-gray-800 border-b-4 border-transparent hover:border-yellow-500 transition duration-300">
+              <a href="#" class="block py-6">About</a>
+            </li>
+            <li
+              class="hover:text-gray-800 border-b-4 border-transparent hover:border-yellow-500 transition duration-300">
+              <a href="#" class="block py-6">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center sm:space-x-9 space-x-5">
+          <div class="relative">
+            <div class="cursor-pointer" id="cart-ico">
+              <img src="images/icon-cart.svg" alt="cart" class="filter transition duration-300 hover:brightness-0">
+              <div id="notif" class="absolute bottom-3 font-medium -right-3 text-xs text-white bg-yellow-500 px-2 rounded-xl">
+              </div>
+            </div>
+            <div class="absolute overflow-y-scroll hidden -right-24 top-10 w-80 h-56 rounded-lg bg-white z-10 shadow-xl mr-6 sm:mr-0"
+              id="cart">
+              <p class="font-bold p-3 border-gray-200" style="border-bottom-width: 1px;">Cart</p>
+              <div id="added" class="space-y-6 py-4">
+                
+              </div>
+              <div id="empty" class="flex justify-center font-bold text-gray-500 mt-10">
+                <p>Your cart is empty.</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sm:w-11 w-9 cursor-pointer rounded-full border-2 border-transparent hover:border-yellow-500 transition duration-300">
+            <img src="images/image-avatar.png" alt="avatar" class="object-cover object-center">
+          </div>
+        </div>
+        <div class="absolute w-full bottom-0 left-0 bg-gray-200 hidden md:block" style="height: 1px;"></div>
+      </nav>
+      <div id="menu" class="hidden">
+        <div class=" md:hidden fixed transition duration-1000 left-0 top-0 h-full w-full bg-gray-900 opacity-50
+        z-50" id="menu-bg"></div> 
+      <div
+        class="md:hidden fixed left-0 top-0 h-full w-56 transition duration-300 bg-white sm:px-12 sm:py-9 px-8 py-8 z-50"
+        id="menu-container">
+        <img src="images/icon-close.svg" alt="close" class="cursor-pointer" id="close">
+        <ul class="font-bold mt-16 space-y-3 text-gray-900">
+          <li class="hover:text-gray-800"><a href="#">Collections</a></li>
+          <li class="hover:text-gray-800"><a href="#">Men</a></li>
+          <li class="hover:text-gray-800"><a href="#">Women</a></li>
+          <li class="hover:text-gray-800"><a href="#">About</a></li>
+          <li class="hover:text-gray-800"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </header>
+  <main class="relative md:flex items-center justify-center md:h-4/5">
+    <div class="md:hidden">
+      <div class="h-96 overflow-hidden relative">       
+        <div id="previous" class="cursor-pointer w-12 h-12 rounded-full bg-white absolute top-40 left-3 flex items-center justify-center"  >
+          <img src="images/icon-previous.svg" alt=""  >
+        </div>
+        <div id="next" class="cursor-pointer w-12 h-12 rounded-full bg-white absolute top-40 right-3 flex items-center justify-center" >
+          <img src="images/icon-next.svg" alt="">
+        </div>
+        <div id="galery-top">
+          <img src="images/image-product-1.jpg" alt="" class="">
+          <img src="images/image-product-2.jpg" alt="" class="hidden">
+          <img src="images/image-product-3.jpg" alt="" class="hidden">
+          <img src="images/image-product-4.jpg" alt="" class="hidden">
+        </div>
+      </div>
+    </div>
+    <div class="2xl:px-52 xl:px-48 lg:px-28 md:px-10  py-14 flex items-center  ">
+      <div class="w-6/12  items-center justify-center md:flex hidden">
+        <div class="w-8/12">
+          <div  class="cursor-pointer">
+            <img id="selected-thumb" src="images/image-product-1.jpg" alt="" class="p-1 rounded-2xl w-full">
+          </div>
+          <div class="flex w-full">
+            <img src="images/image-product-1-thumbnail.jpg" alt=""
+              class="w-3/12 p-1 rounded-2xl cursor-pointer opacity-40 hover:opacity-40 transition" id="thumb1">
+            <img src="images/image-product-2-thumbnail.jpg" alt=""
+              class="w-3/12 p-1 rounded-2xl cursor-pointer hover:opacity-40 transition" id="thumb2">
+            <img src="images/image-product-3-thumbnail.jpg" alt=""
+              class="w-3/12 p-1 rounded-2xl cursor-pointer hover:opacity-40 transition" id="thumb3">
+            <img src="images/image-product-4-thumbnail.jpg" alt=""
+              class="w-3/12 p-1 rounded-2xl cursor-pointer hover:opacity-40 transition" id="thumb4">
+          </div>
+        </div>
+      </div>
+      <div class="md:w-6/12 px-12">
+        <p class="text-yellow-500 font-bold text-sm mb-3">SNEAKER COMPANY</p>
+        <h1 class="text-gray-900 lg:text-3xl md:text-2xl text-3xl font-bold mb-5">Fall Limited Edition<br>Sneakers</h1>
+        <p class="text-gray-600 mb-4">These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          <div class="flex items-center mb-1">
+            <p class="font-bold text-2xl text-gray-900">$125.00</p>
+            <p class="p-1 text-yellow-500 font-bold bg-yellow-100 ml-4 rounded-md">50%</p>
+          </div>
+        <p class="line-through text-gray-500 mb-5 ">$250.00</p>
+        <div class="flex items-center md:flex-row flex-col">
+          <div class="shadow-sm flex items-center md:w-36 md:mb-0 mb-4 w-full justify-between p-3 bg-gray-100 rounded-lg">
+            <img src="images/icon-minus.svg" alt="" class="cursor-pointer text-gray-900 hover:opacity-60" id="minus">
+            <p id="amount">0</p>
+            <img src="images/icon-plus.svg" alt="" class="cursor-pointer hover:opacity-60" id="plus">
+          </div>
+          <div class="md:w-56 w-full">
+            <button
+              id="add-to-cart" class="w-full shadow-md p-3 rounded-lg md:ml-3 flex justify-center items-center bg-yellow-500 text-white hover:opacity-80 transition duration-300 "><img
+                src="images/icon-cart.svg" alt="" class="filter invert brightness-0 mr-3">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="hidden" id="galery">
+    <div class="absolute inset-0 w-full h-screen bg-gray-900 opacity-50 md:block hidden"></div>
+    <div class="w-6/12 absolute top-0 bottom-0 left-1/4   items-center justify-center md:flex hidden">
+      <div class="w-8/12 relative z-40">
+        <div>
+          <img id="selected-thumb2" src="images/image-product-1.jpg" alt="" class="p-1 rounded-2xl w-full">
+        </div>
+        <div class="flex w-full">
+          <img src="images/image-product-1-thumbnail.jpg" alt=""
+            class="w-3/12 p-1 rounded-2xl cursor-pointer filter brightness-75 hover:brightness-75 transition" id="thumb12">
+          <img src="images/image-product-2-thumbnail.jpg" alt=""
+            class="w-3/12 p-1 rounded-2xl cursor-pointer filter hover:brightness-75 transition" id="thumb22">
+          <img src="images/image-product-3-thumbnail.jpg" alt=""
+            class="w-3/12 p-1 rounded-2xl cursor-pointer filter hover:brightness-75 transition" id="thumb32">
+          <img src="images/image-product-4-thumbnail.jpg" alt=""
+            class="w-3/12 p-1 rounded-2xl cursor-pointer filter hover:brightness-75 transition" id="thumb42">
+        </div>
+        <img id="close2" src="images/icon-close.svg" alt="" class="absolute cursor-pointer -right-1 -top-2 w-5 filter invert brightness-0 transform transition duration-500 hover:-rotate-180">
+        <div id="previous2" class="cursor-pointer w-10 h-10 rounded-full bg-white absolute top-1/3 -left-5 flex items-center justify-center"  >
+          <img src="images/icon-previous.svg" alt=""  >
+        </div>
+        <div id="next2" class="cursor-pointer w-10 h-10 rounded-full bg-white absolute top-1/3   -right-5 flex items-center justify-center" >
+          <img src="images/icon-next.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
