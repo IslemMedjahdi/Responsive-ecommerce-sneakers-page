@@ -1,7 +1,7 @@
 ﻿# Responsive-ecommerce-sneakers-page
 Responsive ecommerce sneakers website using HTML, TailwindCss &amp; JavaScript
 
-This is a solution to the [Base Apparel coming soon page challenge hub on Frontend Mentor](hhttps://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Responsive ecommerce sneakers page](hhttps://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
